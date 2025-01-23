@@ -1,0 +1,39 @@
+\documentclass[border=1cm]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+%\usepackage{graphicx}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+\coordinate (a)  at (0,1);
+\coordinate (b)  at (1,1);
+\coordinate (O)  at (0,0);
+\coordinate (X)  at (10,0);
+\coordinate (Y)  at (0,10);
+%\coordinate (P)  at (5,5);
+\draw (a) -- (b);
+
+
+\coordinate (P)  at (30:5);
+
+
+\draw[dashed,thick,fill=blue!30!red]  (O) circle (5cm);
+\draw[dashed,thick,fill=red,opacity=.2] (O) rectangle (P);
+
+%
+%\draw (P) node[above right] {Point $p$};
+%
+%
+%\foreach \x in {0,1,2,...,360}
+%{
+%\draw[]  (0,0) -- (\x:5);
+%}
+
+
+
+
+\end{tikzpicture}
+
+\end{document}
