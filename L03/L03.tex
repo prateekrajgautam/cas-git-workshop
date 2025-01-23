@@ -1,0 +1,137 @@
+\documentclass[a4paper,12pt]{book}% article ,book, report, standalone
+%%preamble
+\usepackage{blindtext}
+\usepackage{fullpage}
+\usepackage{amsmath}%for align nonumber
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{graphicx}
+
+\usepackage{enumerate}
+
+
+\title{Learning \LaTeX}
+\author{Prateek}
+
+%bBpvV
+
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Intro}
+$$
+\begin{bmatrix}
+A_{11}&B_{12}\\
+C&D
+\end{bmatrix}
+$$
+$$
+a=\begin{pmatrix}
+A_{11}&B_{12}\\
+C&D
+\end{pmatrix}
+$$
+
+\section{itemize}
+
+\begin{itemize}
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\end{itemize}
+
+
+\section{enumerate}
+\begin{enumerate}[a)]%iIa1
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\item asdfas
+\end{enumerate}
+
+\begin{description}
+\item[Force] asdfas asdfas asdfas asdfas asdfas 
+\item[$\alpha$] asdfas asdfas asdfas asdfas asdfas
+\item asdfas asdfas
+\item asdfas
+\item asdfas asdfas asdfas
+\item asdfas
+\end{description}
+
+
+%main matter
+\section{Intro to math}
+
+
+\Blindtext
+
+
+\subsection{Equations}
+svg,tiff,pdf
+
+\begin{figure}[htb]%htbp!
+\centering
+\includegraphics[width=\linewidth]{./01.png}
+
+
+\caption{demo caption of figure\label{fig:fig1}}
+\end{figure}
+%listings
+
+%algorithmic2e
+\begin{verbatim}
+\begin{table}[t]
+\centering
+\caption{table\label{tab:tableone}}
+\begin{tabbing}
+\=abs\ \ \ \ \=asdfsadfasdfsdf\ \ \ \ \=asdfa\ \ \ \ \=asfdsdf\ \\\
+\>1\>2\>3\>4
+\end{tabbing}
+\end{table}
+\end{verbatim}
+
+\begin{table}[t]
+\centering
+\caption{table\label{tab:tableone}}
+\begin{tabbing}
+\=abs\ \ \ \ \=asdfsadfasdfsdf\ \ \ \ \=asdfa\ \ \ \ \=asfdsdf\ \\\
+\>1\>2\>3\>4
+\end{tabbing}
+\end{table}
+
+
+
+
+
+\begin{table}[t]
+\centering
+\caption{table\label{tab:tableone}}
+\begin{tabular}{|p{.25\linewidth}|p{.25\linewidth}|p{.5\linewidth}|}
+\hline
+S.No&Name&Def\\
+\hline
+1&Force&Ability to change....Ability to change....Ability to change....Ability to change....Ability to change....Ability to change....Ability to change....\\
+1&Force&Ability to change....\\
+1&Force&Ability to change....\\
+1&Force&Ability to change....\\
+1&Force&Ability to change....\\
+1&Force&Ability to change....\\
+\hline
+\end{tabular}
+\end{table}
+
+multicol\\multirow
+
+\end{document}
+
+
+% \ref \label
