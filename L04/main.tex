@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt]{IEEEtran}% article ,book, report, standalone
+%%preamble
+\usepackage{blindtext}
+%\usepackage{fullpage}
+\usepackage{amsmath}%for align nonumber
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{graphicx}
+
+\usepackage{enumerate}
+
+
+\title{Learning \LaTeX\ day 4}
+\author{Prateek}
+
+%bBpvV
+
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+\begin{document}
+
+\input{frontmatter}
+taken from paper \cite{p1}
+taken from paper \cite{p3}
+taken from paper \cite{p1}
+taken from paper \cite{p2}
+\input{./chapters/ch1}
+\Blindtext
+\bibliographystyle{IEEEtran}%plain,IEEEtran,apalike,alpha,abbr
+\bibliography{ref.bib}
+
+\end{document}
+
+
+% \ref \label
