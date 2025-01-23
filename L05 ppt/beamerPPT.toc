@@ -1,0 +1,6 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{intro1}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{part1}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{part2}{3}{0}{1}
+\beamer@sectionintoc {2}{intro1}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{part1}{5}{0}{2}
