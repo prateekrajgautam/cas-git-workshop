@@ -1,0 +1,36 @@
+%\begin{filecontents}{data.csv}
+%Index,Sine,Cosine
+%0,0,1
+%1,0.84147,0.54030
+%2,0.90930,-0.41615
+%3,0.14112,-0.98999
+%4,-0.75680,-0.65364
+%5,-0.95892,0.28366
+%6,-0.27942,0.96017
+%7,0.65699,0.75390
+%8,0.98936,-0.14550
+%9,0.41212,-0.91113
+%10,-0.54402,-0.83907
+%\end{filecontents}
+%
+%
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.18}
+%
+\begin{document}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={\( x \)},
+        ylabel={\( y \)},
+        title={Multiple Columns in CSV},
+    ]
+        % Plot the data from the CSV file
+        \addplot table [x=Index, y=Sine, col sep=comma] {data.csv};
+        \addlegendentry{\( \sin x \)}
+%
+        \addplot table [x=Index, y=Cosine, col sep=comma] {data.csv};
+        \addlegendentry{\( \cos x \)}
+    \end{axis}
+\end{tikzpicture}
+\end{document}
